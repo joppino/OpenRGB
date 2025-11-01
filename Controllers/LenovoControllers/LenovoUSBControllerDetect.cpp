@@ -65,3 +65,4 @@ REGISTER_HID_DETECTOR_PU("Lenovo Legion 7 Gen 7",   DetectLenovoLegionUSBControl
 REGISTER_HID_DETECTOR_PU("Lenovo Legion 7 Gen 8",   DetectLenovoLegionUSBControllersGen7And8, ITE_VID, LEGION_7GEN8,   LENOVO_PAGE, LENOVO_USAGE);
 REGISTER_HID_DETECTOR_PU("Lenovo Legion 7 Gen 9",   DetectLenovoLegionUSBControllersGen7And8, ITE_VID, LEGION_7GEN9,   LENOVO_PAGE, LENOVO_USAGE);
 REGISTER_HID_DETECTOR_PU("Lenovo Legion 7 Gen 9",   DetectLenovoLegionUSBControllersGen7And8, ITE_VID, LEGION_7GEN9_H, LENOVO_PAGE, LENOVO_USAGE);
+REGISTER_HID_DETECTOR_PU("Lenovo Legion 7 Gen 10",  DetectLenovoLegionUSBControllersGen7And8, ITE_VID, LEGION_7GEN10_H, LENOVO_PAGE, LENOVO_USAGE);

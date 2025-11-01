@@ -268,6 +268,10 @@ LenovoRGBController_Gen7_8::LenovoRGBController_Gen7_8(LenovoGen7And8USBControll
     case LEGION_7GEN9_H:
         description = "Lenovo Legion 7 Generation 9";
         break;
+
+    case LEGION_7GEN10_H:
+        description = "Lenovo Legion 7 Generation 10";
+        break;
     }
 
     brightness = controller->getCurrentBrightness();
@@ -300,6 +304,11 @@ void LenovoRGBController_Gen7_8::SetupZones()
     {
         lenovo_zones.push_back(lenovo_legion_7gen7_logo);
         lenovo_zones.push_back(lenovo_legion_7gen7_vents);
+    }
+
+    if(controller->getPid() == LEGION_7GEN10_H) {
+        lenovo_zones.push_back(lenovo_legion_7gen7_logo);
+        lenovo_zones.push_back(lenovo_legion_7gen10_vents); 
     }
 
     for(unsigned int i = 0; i < lenovo_zones.size(); i++)
